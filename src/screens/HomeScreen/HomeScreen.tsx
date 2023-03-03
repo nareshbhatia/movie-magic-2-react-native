@@ -24,7 +24,7 @@ export function HomeScreen() {
         <View className="relative h-64 w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
           <Image
             className="absolute inset-0 h-full w-full object-cover"
-            src={{uri: 'https://i.imgur.com/YEyeoVQ.jpg'}}
+            source={{uri: 'https://i.imgur.com/YEyeoVQ.jpg'}}
             alt="Couple watching a movie on TV"
           />
         </View>
