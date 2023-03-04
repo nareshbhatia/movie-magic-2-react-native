@@ -8,11 +8,12 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {StatusBar, useColorScheme} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {AuthStateContextProvider} from './contexts';
-import {HomeScreen, SignInScreen} from './screens';
+import {HomeScreen, SignInScreen, Top10MoviesScreen} from './screens';
 
 type RootStackParamList = {
   Home: undefined;
   SignIn: undefined;
+  Top10Movies: undefined;
 };
 
 function App(): JSX.Element {
@@ -31,6 +32,11 @@ function App(): JSX.Element {
               options={{headerShown: false}}
             />
             <Stack.Screen name="SignIn" component={SignInScreen} />
+            <Stack.Screen
+              name="Top10Movies"
+              component={Top10MoviesScreen}
+              options={{headerShown: false}}
+            />
           </Stack.Navigator>
         </NavigationContainer>
       </SafeAreaProvider>
