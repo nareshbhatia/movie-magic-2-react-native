@@ -30,11 +30,7 @@ function App(): JSX.Element {
               component={HomeScreen}
               options={{headerShown: false}}
             />
-            <Stack.Screen
-              name="SignIn"
-              component={SignInScreen}
-              options={{headerShown: false}}
-            />
+            <Stack.Screen name="SignIn" component={SignInScreen} />
           </Stack.Navigator>
         </NavigationContainer>
       </SafeAreaProvider>

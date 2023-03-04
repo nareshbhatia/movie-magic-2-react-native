@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import {User} from '~/models';
+import {User} from '../models';
 
 // ---------- AuthState ----------
 // Modify the AuthState definition as per you requirements or
