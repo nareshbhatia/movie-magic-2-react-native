@@ -5,10 +5,6 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {MovieItem} from './MovieItem';
 import {useMovies} from './useMovies';
 
-function ItemSeparator() {
-  return <View className="h-px w-full bg-gray-300" />;
-}
-
 export function Top10MoviesScreen() {
   const navigation = useNavigation();
   const {isLoading, movies} = useMovies();
@@ -22,7 +18,7 @@ export function Top10MoviesScreen() {
   };
 
   return (
-    <SafeAreaView>
+    <SafeAreaView className="bg-default flex-1">
       <View className="h-16 flex flex-row items-center px-4">
         <Text className="flex-1 text-2xl text-brand font-semibold">
           Top 10 Movies Of All Time
@@ -30,7 +26,7 @@ export function Top10MoviesScreen() {
         <Button title="Sign out" onPress={handleSignOut} />
       </View>
 
-      <View className="p-4">
+      <View className="px-4">
         {isLoading ? (
           <ActivityIndicator />
         ) : (
@@ -39,9 +35,7 @@ export function Top10MoviesScreen() {
             renderItem={({item}) => (
               <MovieItem movie={item} onItemPressed={handleItemPressed} />
             )}
-            ItemSeparatorComponent={ItemSeparator}
             keyExtractor={item => item.id}
-            className="mt-3"
           />
         )}
       </View>

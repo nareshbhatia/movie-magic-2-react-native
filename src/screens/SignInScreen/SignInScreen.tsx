@@ -24,7 +24,7 @@ export function SignInScreen() {
   };
 
   return (
-    <SafeAreaView className="flex-1 bg-default">
+    <SafeAreaView className="bg-default flex-1">
       <View className="p-4">
         <SignInForm onSubmit={handleSubmit} />
       </View>

@@ -5,7 +5,7 @@ import {Header} from '../../components/Header';
 
 export function HomeScreen() {
   return (
-    <SafeAreaView className="mx-auto max-w-7xl">
+    <SafeAreaView className="bg-default flex-1 mx-auto max-w-7xl">
       <Header />
       <View className="lg:relative lg:mt-6">
         <View className="mx-auto max-w-7xl pt-16 pb-20 lg:py-48">
@@ -25,7 +25,7 @@ export function HomeScreen() {
         </View>
         <View className="relative h-64 w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
           <Image
-            className="absolute inset-0 h-full w-full object-cover"
+            className="h-full w-full object-cover"
             source={{uri: 'https://i.imgur.com/YEyeoVQ.jpg'}}
             alt="Couple watching a movie on TV"
           />
