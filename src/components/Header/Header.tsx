@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {useNavigation} from '@react-navigation/native';
-import {Button, Text, View} from 'react-native';
+import {Text, View} from 'react-native';
+import {Button} from '../Button';
 
 export function Header() {
   const navigation = useNavigation();
@@ -14,7 +15,9 @@ export function Header() {
       <Text className="flex-1 text-3xl text-brand font-semibold">
         Movie Magic
       </Text>
-      <Button title="Sign in" onPress={handleSignIn} />
+      <Button variant="primary" onPress={handleSignIn}>
+        Sign in
+      </Button>
     </View>
   );
 }

@@ -7,6 +7,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {StatusBar, useColorScheme} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
+import {NativeWindStyleSheet} from 'nativewind';
 import {AuthStateContextProvider} from './contexts';
 import {HomeScreen, SignInScreen, Top10MoviesScreen} from './screens';
 
@@ -19,6 +20,8 @@ type RootStackParamList = {
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   const Stack = createNativeStackNavigator<RootStackParamList>();
+  // Override NativeWind's choice to set default text to 14px
+  NativeWindStyleSheet.setVariables({'--rem': 16});
 
   return (
     <AuthStateContextProvider>

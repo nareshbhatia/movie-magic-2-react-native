@@ -1,8 +1,9 @@
 import * as React from 'react';
 import {yupResolver} from '@hookform/resolvers/yup';
 import {Controller, useForm} from 'react-hook-form';
-import {Button, Text, TextInput, View} from 'react-native';
+import {Text, TextInput, View} from 'react-native';
 import * as yup from 'yup';
+import {Button} from '../../components/Button';
 import {ErrorMessage} from '../../components/Form/ErrorMessage';
 import {Credentials} from '../../models';
 
@@ -65,7 +66,7 @@ export function SignInForm({onSubmit}: SignInFormProps) {
             )}
 
             <View>
-              <Button title="Sign in" onPress={handleSubmit(onSubmit)} />
+              <Button onPress={handleSubmit(onSubmit)}>Sign in</Button>
             </View>
           </View>
         </View>
