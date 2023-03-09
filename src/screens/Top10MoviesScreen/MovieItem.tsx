@@ -20,22 +20,24 @@ export function MovieItem({movie, onItemPressed}: MovieItemProps) {
               className="object-cover"
               source={{uri: movie.photoUrl}}
               alt={movie.name}
-              style={{height: 200, width: 128}}
+              style={{height: 220, width: 128}}
             />
           </View>
-          <View className="flex-auto ml-2 px-6 py-2">
-            <View className="flex flex-row flex-wrap">
-              <Text className="flex-auto text-lg leading-6 font-semibold">
+          <View className="flex-auto px-4 py-2">
+            <View className="flex flex-row">
+              <Text className="flex-auto text-base leading-5 font-semibold">
                 {movie.name}
               </Text>
-              <View className="flex text-lg font-semibold">
-                <Text>{movie.rating.toFixed(1)}</Text>
+              <View className="ml-2 flex flex-row">
+                <Text className="text-base leading-5 font-semibold">
+                  {movie.rating.toFixed(1)}
+                </Text>
               </View>
-              <Text className="mt-1 w-full flex-none font-medium">
-                {movie.year}
-              </Text>
-              <Text className="mt-3 text-sm">{movie.logline}</Text>
             </View>
+            <Text className="w-full flex-none text-sm font-medium">
+              {movie.year}
+            </Text>
+            <Text className="mt-2 text-sm">{movie.logline}</Text>
           </View>
         </View>
       </View>

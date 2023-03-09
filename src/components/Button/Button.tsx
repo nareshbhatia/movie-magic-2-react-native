@@ -33,7 +33,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   className = clsx(
-    'flex flex-row items-center justify-center overflow-hidden px-8 py-2 text-sm text-center font-medium border-none rounded-md',
+    'flex flex-row items-center justify-center overflow-hidden px-6 py-2 text-sm text-center font-medium border-none rounded-md',
     variantStyles[variant],
     className,
   );

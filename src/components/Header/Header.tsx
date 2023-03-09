@@ -15,9 +15,7 @@ export function Header() {
       <Text className="flex-1 text-3xl text-brand font-semibold">
         Movie Magic
       </Text>
-      <Button variant="primary" onPress={handleSignIn}>
-        Sign in
-      </Button>
+      <Button onPress={handleSignIn}>Sign in</Button>
     </View>
   );
 }

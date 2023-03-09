@@ -1,7 +1,8 @@
 import * as React from 'react';
 import {useNavigation} from '@react-navigation/native';
-import {ActivityIndicator, Button, FlatList, Text, View} from 'react-native';
+import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import {Button} from '../../components/Button';
 import {MovieItem} from './MovieItem';
 import {useMovies} from './useMovies';
 
@@ -20,10 +21,10 @@ export function Top10MoviesScreen() {
   return (
     <SafeAreaView className="bg-default flex-1">
       <View className="h-16 flex flex-row items-center px-4">
-        <Text className="flex-1 text-2xl text-brand font-semibold">
+        <Text className="flex-1 text-xl text-brand font-semibold">
           Top 10 Movies Of All Time
         </Text>
-        <Button title="Sign out" onPress={handleSignOut} />
+        <Button onPress={handleSignOut}>Sign out</Button>
       </View>
 
       <View className="px-4">
