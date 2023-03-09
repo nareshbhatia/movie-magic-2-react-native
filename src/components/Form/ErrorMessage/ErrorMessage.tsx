@@ -7,6 +7,6 @@ interface ErrorMessageProps {
 
 export function ErrorMessage({error}: ErrorMessageProps) {
   return error !== undefined ? (
-    <Text className="text-error">{error}</Text>
+    <Text className="mt-1 text-base text-error">{error}</Text>
   ) : null;
 }

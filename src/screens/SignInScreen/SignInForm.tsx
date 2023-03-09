@@ -34,11 +34,12 @@ export function SignInForm({onSubmit}: SignInFormProps) {
       <View className="mt-8">
         <View className="py-8 px-4 shadow sm:rounded-lg sm:px-10">
           <View className="space-y-6">
-            <Text>Email address</Text>
+            <Text className="text-sm font-medium mb-1">Email address</Text>
             <Controller
               control={control}
               render={({field: {onChange, onBlur, value}}) => (
                 <TextInput
+                  className="rounded-md bg-transparent border border-default px-3 py-2 focus:border-focus"
                   onBlur={onBlur}
                   onChangeText={value => onChange(value)}
                   value={value}
@@ -48,11 +49,12 @@ export function SignInForm({onSubmit}: SignInFormProps) {
             />
             {errors.email && <ErrorMessage error={errors.email.message} />}
 
-            <Text>Password</Text>
+            <Text className="text-sm font-medium mb-1">Password</Text>
             <Controller
               control={control}
               render={({field: {onChange, onBlur, value}}) => (
                 <TextInput
+                  className="rounded-md bg-transparent border border-default px-3 py-2 focus:border-focus"
                   secureTextEntry={true}
                   onBlur={onBlur}
                   onChangeText={value => onChange(value)}
