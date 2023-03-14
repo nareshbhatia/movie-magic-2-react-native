@@ -1,11 +1,11 @@
 import * as React from 'react';
-import {SafeAreaView} from 'react-native-safe-area-context';
 import {Image, Text, View} from 'react-native';
 import {Header} from '../../components/Header';
+import {Screen} from '../../components/Screen';
 
 export function HomeScreen() {
   return (
-    <SafeAreaView className="bg-default flex-1 mx-auto max-w-7xl">
+    <Screen>
       <Header />
       <View className="lg:relative lg:mt-6">
         <View className="mx-auto max-w-7xl pt-16 pb-20 lg:py-48">
@@ -31,6 +31,6 @@ export function HomeScreen() {
           />
         </View>
       </View>
-    </SafeAreaView>
+    </Screen>
   );
 }

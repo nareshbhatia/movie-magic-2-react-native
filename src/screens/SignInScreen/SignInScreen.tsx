@@ -1,9 +1,9 @@
 import * as React from 'react';
 import {useNavigation} from '@react-navigation/native';
-import {SafeAreaView} from 'react-native-safe-area-context';
 import {View} from 'react-native';
 import {useAuthStateContext} from '../../contexts';
 import {Credentials, User} from '../../models';
+import {Screen} from '../../components/Screen';
 import {SignInForm} from './SignInForm';
 
 export function SignInScreen() {
@@ -24,10 +24,10 @@ export function SignInScreen() {
   };
 
   return (
-    <SafeAreaView className="bg-default flex-1">
+    <Screen>
       <View className="p-4">
         <SignInForm onSubmit={handleSubmit} />
       </View>
-    </SafeAreaView>
+    </Screen>
   );
 }
