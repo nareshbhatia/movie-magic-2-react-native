@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Image, Text, View} from 'react-native';
+import {Image, ScrollView, Text, View} from 'react-native';
 import {Header} from '../../components/Header';
 import {Screen} from '../../components/Screen';
 
@@ -7,7 +7,7 @@ export function HomeScreen() {
   return (
     <Screen>
       <Header />
-      <View className="lg:relative lg:mt-6">
+      <ScrollView className="lg:relative lg:mt-6">
         <View className="mx-auto max-w-7xl pt-16 pb-20 lg:py-48">
           <View className="px-6 sm:px-8 lg:w-1/2 xl:pr-16">
             <Text className="text-center lg:text-left text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
@@ -30,7 +30,7 @@ export function HomeScreen() {
             alt="Couple watching a movie on TV"
           />
         </View>
-      </View>
+      </ScrollView>
     </Screen>
   );
 }

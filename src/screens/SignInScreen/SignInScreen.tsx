@@ -1,6 +1,6 @@
 import * as React from 'react';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {View} from 'react-native';
+import {ScrollView} from 'react-native';
 import {Screen} from '../../components/Screen';
 import {useAuthStateContext} from '../../contexts';
 import {Credentials, User} from '../../models';
@@ -27,9 +27,9 @@ export function SignInScreen({navigation}: SignInScreenProps) {
 
   return (
     <Screen>
-      <View className="p-4">
+      <ScrollView className="p-4">
         <SignInForm onSubmit={handleSubmit} />
-      </View>
+      </ScrollView>
     </Screen>
   );
 }
