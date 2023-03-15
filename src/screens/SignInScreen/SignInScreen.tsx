@@ -27,7 +27,7 @@ export function SignInScreen({navigation}: SignInScreenProps) {
 
   return (
     <Screen>
-      <ScrollView className="p-4">
+      <ScrollView className="px-4">
         <SignInForm onSubmit={handleSubmit} />
       </ScrollView>
     </Screen>

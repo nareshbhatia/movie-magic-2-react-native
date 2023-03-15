@@ -31,45 +31,41 @@ export function SignInForm({onSubmit}: SignInFormProps) {
         Sign in to your account
       </Text>
 
-      <View className="mt-8">
-        <View className="py-8 px-4 shadow sm:rounded-lg sm:px-10">
-          <View className="space-y-6">
-            <Text className="text-sm font-medium mb-1">Email address</Text>
-            <Controller
-              control={control}
-              render={({field: {onChange, onBlur, value}}) => (
-                <TextInput
-                  className="rounded-md bg-transparent border border-default px-3 py-2 focus:border-focus"
-                  onBlur={onBlur}
-                  onChangeText={value => onChange(value)}
-                  value={value}
-                />
-              )}
-              name="email"
-            />
-            {errors.email && <ErrorMessage error={errors.email.message} />}
-
-            <Text className="text-sm font-medium mb-1">Password</Text>
-            <Controller
-              control={control}
-              render={({field: {onChange, onBlur, value}}) => (
-                <TextInput
-                  className="rounded-md bg-transparent border border-default px-3 py-2 focus:border-focus"
-                  secureTextEntry={true}
-                  onBlur={onBlur}
-                  onChangeText={value => onChange(value)}
-                  value={value}
-                />
-              )}
-              name="password"
-            />
-            {errors.password && (
-              <ErrorMessage error={errors.password.message} />
+      <View className="py-8 px-4 shadow sm:rounded-lg sm:px-10">
+        <View className="space-y-6">
+          <Text className="text-sm font-medium mb-1">Email address</Text>
+          <Controller
+            control={control}
+            render={({field: {onChange, onBlur, value}}) => (
+              <TextInput
+                className="rounded-md bg-transparent border border-default px-3 py-2 focus:border-focus"
+                onBlur={onBlur}
+                onChangeText={value => onChange(value)}
+                value={value}
+              />
             )}
+            name="email"
+          />
+          {errors.email && <ErrorMessage error={errors.email.message} />}
 
-            <View>
-              <Button onPress={handleSubmit(onSubmit)}>Sign in</Button>
-            </View>
+          <Text className="text-sm font-medium mb-1">Password</Text>
+          <Controller
+            control={control}
+            render={({field: {onChange, onBlur, value}}) => (
+              <TextInput
+                className="rounded-md bg-transparent border border-default px-3 py-2 focus:border-focus"
+                secureTextEntry={true}
+                onBlur={onBlur}
+                onChangeText={value => onChange(value)}
+                value={value}
+              />
+            )}
+            name="password"
+          />
+          {errors.password && <ErrorMessage error={errors.password.message} />}
+
+          <View>
+            <Button onPress={handleSubmit(onSubmit)}>Sign in</Button>
           </View>
         </View>
       </View>
