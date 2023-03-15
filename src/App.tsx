@@ -3,45 +3,20 @@
  */
 
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {NativeWindStyleSheet} from 'nativewind';
 import {AuthStateContextProvider} from './contexts';
-import {HomeScreen, SignInScreen, Top10MoviesScreen} from './screens';
+import {AppNavigator} from './navigators';
 
-type RootStackParamList = {
-  Home: undefined;
-  SignIn: undefined;
-  Top10Movies: undefined;
-};
-
-function App(): JSX.Element {
-  const Stack = createNativeStackNavigator<RootStackParamList>();
+export function App() {
   // Override NativeWind's choice to set default text to 14px
   NativeWindStyleSheet.setVariables({'--rem': 16});
 
   return (
     <AuthStateContextProvider>
       <SafeAreaProvider>
-        <NavigationContainer>
-          <Stack.Navigator initialRouteName="Home">
-            <Stack.Screen
-              name="Home"
-              component={HomeScreen}
-              options={{headerShown: false}}
-            />
-            <Stack.Screen name="SignIn" component={SignInScreen} />
-            <Stack.Screen
-              name="Top10Movies"
-              component={Top10MoviesScreen}
-              options={{headerShown: false}}
-            />
-          </Stack.Navigator>
-        </NavigationContainer>
+        <AppNavigator />
       </SafeAreaProvider>
     </AuthStateContextProvider>
   );
 }
-
-export default App;

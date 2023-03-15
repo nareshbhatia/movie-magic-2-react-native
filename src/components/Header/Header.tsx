@@ -1,13 +1,18 @@
 import * as React from 'react';
 import {useNavigation} from '@react-navigation/native';
+import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {Text, View} from 'react-native';
+import {AppStackParamList} from '../../navigators';
 import {Button} from '../Button';
 
+type NavigationProps = NativeStackScreenProps<AppStackParamList>;
+
 export function Header() {
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProps>();
 
   const handleSignIn = () => {
-    navigation.navigate('SignIn', {});
+    // TODO: Why TS2339: Property 'navigate' does not exist on type 'NavigationProps'.
+    navigation.navigate('SignIn');
   };
 
   return (

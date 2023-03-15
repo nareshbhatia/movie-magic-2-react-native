@@ -1,13 +1,15 @@
 import * as React from 'react';
-import {useNavigation} from '@react-navigation/native';
+import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {View} from 'react-native';
+import {Screen} from '../../components/Screen';
 import {useAuthStateContext} from '../../contexts';
 import {Credentials, User} from '../../models';
-import {Screen} from '../../components/Screen';
+import {AppStackParamList} from '../../navigators';
 import {SignInForm} from './SignInForm';
 
-export function SignInScreen() {
-  const navigation = useNavigation();
+type SignInScreenProps = NativeStackScreenProps<AppStackParamList, 'SignIn'>;
+
+export function SignInScreen({navigation}: SignInScreenProps) {
   const {authState, setAuthState} = useAuthStateContext();
 
   const handleSubmit = async (credentials: Credentials) => {
@@ -20,7 +22,7 @@ export function SignInScreen() {
         'https://images.unsplash.com/photo-1568585105565-e372998a195d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     };
     setAuthState({...authState, user});
-    navigation.navigate('Top10Movies', {});
+    navigation.navigate('Top10Movies');
   };
 
   return (

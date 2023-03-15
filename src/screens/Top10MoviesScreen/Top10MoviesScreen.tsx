@@ -1,17 +1,22 @@
 import * as React from 'react';
-import {useNavigation} from '@react-navigation/native';
+import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 import {Button} from '../../components/Button';
 import {Screen} from '../../components/Screen';
+import {AppStackParamList} from '../../navigators';
 import {MovieItem} from './MovieItem';
 import {useMovies} from './useMovies';
 
-export function Top10MoviesScreen() {
-  const navigation = useNavigation();
+type Top10MoviesScreenProps = NativeStackScreenProps<
+  AppStackParamList,
+  'Top10Movies'
+>;
+
+export function Top10MoviesScreen({navigation}: Top10MoviesScreenProps) {
   const {isLoading, movies} = useMovies();
 
   const handleSignOut = () => {
-    navigation.navigate('Home', {});
+    navigation.navigate('Home');
   };
 
   const handleItemPressed = (movieId: string) => {
