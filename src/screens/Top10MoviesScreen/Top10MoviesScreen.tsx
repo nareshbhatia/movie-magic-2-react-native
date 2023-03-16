@@ -26,7 +26,7 @@ export function Top10MoviesScreen({navigation}: Top10MoviesScreenProps) {
   return (
     <Screen>
       <View className="h-16 flex flex-row items-center px-4">
-        <Text className="flex-1 text-xl text-brand font-semibold">
+        <Text className="flex-1 text-lg text-brand font-semibold">
           Top 10 Movies Of All Time
         </Text>
         <Button onPress={handleSignOut}>Sign out</Button>
