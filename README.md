@@ -1,4 +1,4 @@
-# Movie Magic 2
+# Movie Magic 2 (with React Native)
 
 A sample application to demonstrate the use of basic UI components such as
 buttons, forms and lists.
