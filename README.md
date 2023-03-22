@@ -27,5 +27,12 @@ Now follow these steps:
 ```shell
 yarn
 yarn pod-install  # pod install with RCT_NEW_ARCH_ENABLED=1
-yarn ios
+npx react-native run-ios
+
+# To run on a real iOS device, attach an iPhone to your machine using a USB cable.
+# Open the project in Xcode (ReactNativeDemo/ios/ReactNativeDemo.xcworkspace)
+# Under "Signing and Capabilities" tab, select your Apple Developer account in the "Team" Field.
+# (Do this for both targets: MovieMagic & MovieMagicTests)
+# Now execute the following command:
+npx react-native run-ios --device
 ```
