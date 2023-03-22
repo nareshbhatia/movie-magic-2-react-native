@@ -10,7 +10,8 @@
     "start": "react-native start",
     "start-reset": "react-native start --reset-cache",
     "test": "jest",
-    "pod-install": "cd ios && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install && cd ..",
+    "pod-install": "cd ios && bundle exec pod install && cd ..",
+    "pod-install-new-arch": "cd ios && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install && cd ..",
     "format": "prettier --write README.md \"src/**/*.{js,jsx,ts,tsx,json}\""
   },
   "dependencies": {
