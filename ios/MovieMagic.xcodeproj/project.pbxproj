@@ -11,9 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		3E87AA534F19604F263D7655 /* libPods-MovieMagic-MovieMagicTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D7FA7AC7DABA3D9D2EFF5E /* libPods-MovieMagic-MovieMagicTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		86CF31297A18F65046166B25 /* libPods-MovieMagic-MovieMagicTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E0433D2E984985421CFB92 /* libPods-MovieMagic-MovieMagicTests.a */; };
-		FA75318B08C9DB3F59C8A1DB /* libPods-MovieMagic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EE3B28AC5BACDED44300D9 /* libPods-MovieMagic.a */; };
+		A65E91F98E6FA5BDF106BD46 /* libPods-MovieMagic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 537804EA3F73D7D73FEA74DD /* libPods-MovieMagic.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +36,14 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MovieMagic/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MovieMagic/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MovieMagic/main.m; sourceTree = "<group>"; };
-		27D1D8EEA014AAB862E0305F /* Pods-MovieMagic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieMagic.release.xcconfig"; path = "Target Support Files/Pods-MovieMagic/Pods-MovieMagic.release.xcconfig"; sourceTree = "<group>"; };
-		5E3AF37BD5D1D5C3A2A3F03D /* Pods-MovieMagic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieMagic.debug.xcconfig"; path = "Target Support Files/Pods-MovieMagic/Pods-MovieMagic.debug.xcconfig"; sourceTree = "<group>"; };
-		6DF6F525F05885FFD81FA1F4 /* Pods-MovieMagic-MovieMagicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieMagic-MovieMagicTests.debug.xcconfig"; path = "Target Support Files/Pods-MovieMagic-MovieMagicTests/Pods-MovieMagic-MovieMagicTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B1E766D7F2DE29D9FD8A2CD /* Pods-MovieMagic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieMagic.debug.xcconfig"; path = "Target Support Files/Pods-MovieMagic/Pods-MovieMagic.debug.xcconfig"; sourceTree = "<group>"; };
+		1DA208606163A2864CFACBE6 /* Pods-MovieMagic-MovieMagicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieMagic-MovieMagicTests.debug.xcconfig"; path = "Target Support Files/Pods-MovieMagic-MovieMagicTests/Pods-MovieMagic-MovieMagicTests.debug.xcconfig"; sourceTree = "<group>"; };
+		537804EA3F73D7D73FEA74DD /* libPods-MovieMagic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MovieMagic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FE0C76F17474695AD39B3CE /* Pods-MovieMagic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieMagic.release.xcconfig"; path = "Target Support Files/Pods-MovieMagic/Pods-MovieMagic.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MovieMagic/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		98E0433D2E984985421CFB92 /* libPods-MovieMagic-MovieMagicTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MovieMagic-MovieMagicTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2EE3B28AC5BACDED44300D9 /* libPods-MovieMagic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MovieMagic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD0B02AE0627A3EB894845CD /* Pods-MovieMagic-MovieMagicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieMagic-MovieMagicTests.release.xcconfig"; path = "Target Support Files/Pods-MovieMagic-MovieMagicTests/Pods-MovieMagic-MovieMagicTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F38B70CDA62CD9BCE1E8D26A /* Pods-MovieMagic-MovieMagicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieMagic-MovieMagicTests.release.xcconfig"; path = "Target Support Files/Pods-MovieMagic-MovieMagicTests/Pods-MovieMagic-MovieMagicTests.release.xcconfig"; sourceTree = "<group>"; };
+		F8D7FA7AC7DABA3D9D2EFF5E /* libPods-MovieMagic-MovieMagicTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MovieMagic-MovieMagicTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86CF31297A18F65046166B25 /* libPods-MovieMagic-MovieMagicTests.a in Frameworks */,
+				3E87AA534F19604F263D7655 /* libPods-MovieMagic-MovieMagicTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA75318B08C9DB3F59C8A1DB /* libPods-MovieMagic.a in Frameworks */,
+				A65E91F98E6FA5BDF106BD46 /* libPods-MovieMagic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				A2EE3B28AC5BACDED44300D9 /* libPods-MovieMagic.a */,
-				98E0433D2E984985421CFB92 /* libPods-MovieMagic-MovieMagicTests.a */,
+				537804EA3F73D7D73FEA74DD /* libPods-MovieMagic.a */,
+				F8D7FA7AC7DABA3D9D2EFF5E /* libPods-MovieMagic-MovieMagicTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,10 +140,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5E3AF37BD5D1D5C3A2A3F03D /* Pods-MovieMagic.debug.xcconfig */,
-				27D1D8EEA014AAB862E0305F /* Pods-MovieMagic.release.xcconfig */,
-				6DF6F525F05885FFD81FA1F4 /* Pods-MovieMagic-MovieMagicTests.debug.xcconfig */,
-				CD0B02AE0627A3EB894845CD /* Pods-MovieMagic-MovieMagicTests.release.xcconfig */,
+				1B1E766D7F2DE29D9FD8A2CD /* Pods-MovieMagic.debug.xcconfig */,
+				5FE0C76F17474695AD39B3CE /* Pods-MovieMagic.release.xcconfig */,
+				1DA208606163A2864CFACBE6 /* Pods-MovieMagic-MovieMagicTests.debug.xcconfig */,
+				F38B70CDA62CD9BCE1E8D26A /* Pods-MovieMagic-MovieMagicTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -155,12 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MovieMagicTests" */;
 			buildPhases = (
-				760DC0187E4B55FED6DB5A48 /* [CP] Check Pods Manifest.lock */,
+				5179EC6638FDDAE139C0159D /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				EDF616615B9048128A34EB9A /* [CP] Embed Pods Frameworks */,
-				DB7CBEBB53355DDECD960D18 /* [CP] Copy Pods Resources */,
+				A580711E407AB294767C7BD0 /* [CP] Embed Pods Frameworks */,
+				03853A6172CA8CEA630C7FDC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,14 +176,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MovieMagic" */;
 			buildPhases = (
-				D99EBC4594AB40BE1E103D4B /* [CP] Check Pods Manifest.lock */,
+				2429A8ED797E5617B0805BC1 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				7A1453247B14BB7FCB5A2949 /* [CP] Embed Pods Frameworks */,
-				F96B507D0C0F97FB37B6A506 /* [CP] Copy Pods Resources */,
+				DC2F9A870E9098E84021D8D4 /* [CP] Embed Pods Frameworks */,
+				6D8FF8A790BDA6337B557706 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,46 +266,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		760DC0187E4B55FED6DB5A48 /* [CP] Check Pods Manifest.lock */ = {
+		03853A6172CA8CEA630C7FDC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovieMagic-MovieMagicTests/Pods-MovieMagic-MovieMagicTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MovieMagic-MovieMagicTests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-MovieMagic-MovieMagicTests/Pods-MovieMagic-MovieMagicTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovieMagic-MovieMagicTests/Pods-MovieMagic-MovieMagicTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7A1453247B14BB7FCB5A2949 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MovieMagic/Pods-MovieMagic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MovieMagic/Pods-MovieMagic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovieMagic/Pods-MovieMagic-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D99EBC4594AB40BE1E103D4B /* [CP] Check Pods Manifest.lock */ = {
+		2429A8ED797E5617B0805BC1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,24 +305,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DB7CBEBB53355DDECD960D18 /* [CP] Copy Pods Resources */ = {
+		5179EC6638FDDAE139C0159D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MovieMagic-MovieMagicTests/Pods-MovieMagic-MovieMagicTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MovieMagic-MovieMagicTests/Pods-MovieMagic-MovieMagicTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieMagic-MovieMagicTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovieMagic-MovieMagicTests/Pods-MovieMagic-MovieMagicTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EDF616615B9048128A34EB9A /* [CP] Embed Pods Frameworks */ = {
+		6D8FF8A790BDA6337B557706 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovieMagic/Pods-MovieMagic-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovieMagic/Pods-MovieMagic-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovieMagic/Pods-MovieMagic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A580711E407AB294767C7BD0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -361,21 +361,21 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovieMagic-MovieMagicTests/Pods-MovieMagic-MovieMagicTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F96B507D0C0F97FB37B6A506 /* [CP] Copy Pods Resources */ = {
+		DC2F9A870E9098E84021D8D4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MovieMagic/Pods-MovieMagic-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MovieMagic/Pods-MovieMagic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MovieMagic/Pods-MovieMagic-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MovieMagic/Pods-MovieMagic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovieMagic/Pods-MovieMagic-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovieMagic/Pods-MovieMagic-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -430,7 +430,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DF6F525F05885FFD81FA1F4 /* Pods-MovieMagic-MovieMagicTests.debug.xcconfig */;
+			baseConfigurationReference = 1DA208606163A2864CFACBE6 /* Pods-MovieMagic-MovieMagicTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 2H7A73MUK8;
@@ -458,7 +458,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD0B02AE0627A3EB894845CD /* Pods-MovieMagic-MovieMagicTests.release.xcconfig */;
+			baseConfigurationReference = F38B70CDA62CD9BCE1E8D26A /* Pods-MovieMagic-MovieMagicTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -483,7 +483,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E3AF37BD5D1D5C3A2A3F03D /* Pods-MovieMagic.debug.xcconfig */;
+			baseConfigurationReference = 1B1E766D7F2DE29D9FD8A2CD /* Pods-MovieMagic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -511,7 +511,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27D1D8EEA014AAB862E0305F /* Pods-MovieMagic.release.xcconfig */;
+			baseConfigurationReference = 5FE0C76F17474695AD39B3CE /* Pods-MovieMagic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
